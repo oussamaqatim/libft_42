@@ -6,15 +6,16 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 18:38:54 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/05 18:38:55 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/12 23:50:19 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-int ft_isprint(int c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 127)
-        return (1);
-    else
-        return (0);
+	if (c >= 32 && c <= 127)
+		return (1);
+	else
+		return (0);
 }

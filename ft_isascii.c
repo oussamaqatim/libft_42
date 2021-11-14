@@ -6,15 +6,16 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 18:38:50 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/05 18:38:51 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/12 23:50:12 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-int ft_isascii(int c)
+#include "libft.h"
+
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 0177)
-        return (1);
-    else
-        return (0);
+	if (c >= 0 && c <= 0177)
+		return (1);
+	else
+		return (0);
 }

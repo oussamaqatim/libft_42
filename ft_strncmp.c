@@ -1,5 +1,17 @@
-#include<stdio.h>
-#include<string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 23:00:58 by oqatim            #+#    #+#             */
+/*   Updated: 2021/11/12 23:50:35 by oqatim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {
 	unsigned int	i;
@@ -11,13 +23,4 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 		return (0);
 	else
 		return (s1[i] - s2[i]);
-}
-int main()
-{
-	char chaine1[] = "oussama";
-	char chaine2[] = "qatim";
-	int test;
-	test = ft_strncmp(chaine1,chaine2,2);
-	printf("%d\n",test);
-	return(0);
 }

@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oqatim <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/05 15:07:50 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/05 15:09:50 by oqatim           ###   ########.fr       */
+/*   Created: 2021/11/13 03:21:50 by oqatim            #+#    #+#             */
+/*   Updated: 2021/11/13 04:40:55 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int main()
+#include "libft.h"
+
+void	*ft_bzero(void *s, size_t n)
 {
-	printf("hello world\n");
-	return(0);
+	size_t	i;
+	char	*b;
+
+	i = 0;
+	b = (char *) s;
+	while (i < n)
+	{
+		b[i] = 0;
+		i++;
+	}
+	return (b);
 }

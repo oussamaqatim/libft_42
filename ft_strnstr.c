@@ -1,30 +1,35 @@
-#include <stdio.h>
-#include <string.h>
- 
- char	*ft_strstr(char *str, char *to_find)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 23:01:12 by oqatim            #+#    #+#             */
+/*   Updated: 2021/11/13 00:08:27 by oqatim           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strnstr(char *haystack, char *needle, size_t len)
 {
 	int	i;
-	int	j;
+	int	o;
 
 	i = 0;
-	if (to_find[i] == '\0')
-		return (str);
-	while (str[i] != '\0')
+	while (haystack[i] != '\0')
 	{
-		j = 0;
-		while (str[i + j] == to_find[j])
+		o = 0;
+		while (haystack[i + o] == needle[o] && i + o < len)
 		{
-			j++;
-			if (to_find[j] == '\0')
-				return (&str[i]);
+			o++;
+			if (needle[o] == '\0')
+			{
+				return (&haystack[i]);
+			}
 		}
 		i++;
 	}
 	return (NULL);
-}
-int main() 
-{
-  char S[] ="oussama rass tarro.com !";
-  printf("%s\n",ft_strstr(S,"torro.com"));
-  return 0;
 }
