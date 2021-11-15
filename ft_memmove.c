@@ -6,10 +6,12 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 05:17:01 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/13 05:18:02 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/15 06:26:32 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *memmove(void *dst, const void *src, size_t len)
+void	*memmove(void *dst, const void *src, size_t len)
+{
+}
