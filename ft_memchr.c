@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 23:00:04 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/12 23:50:25 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/21 13:43:09 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		j;
+	size_t		j;
 	char	*atr;
 
 	if (s == NULL)
