@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 23:00:04 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/21 13:43:09 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/12/05 05:23:01 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,20 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		j;
+	size_t	j;
 	char	*atr;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	atr = (char *)s;
 	j = 0;
-	while (s && atr[j] != '\0')
+	while (j < n)
 	{
-		if (j < n)
+		if (atr[j] == (unsigned char)c)
 		{
-			if (atr[j] == c)
-			{
-				return (&atr[j]);
-			}
+			return (&atr[j]);
 		}
 		j++;
 	}
 	return (NULL);
 }
-
-//int		main()
-//{
-//	char	s[];
-//
-//	s[] = "oussama";
-//	printf("%s\n", memchr(s, 'z', 300));
-//	return (0);
-//}

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/13 04:40:34 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/15 02:47:13 by oqatim           ###   ########.fr       */
+/*   Created: 2021/12/04 01:24:15 by oqatim            #+#    #+#             */
+/*   Updated: 2021/12/05 03:38:14 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*d;
 
 	i = 0;
+	if (!src && !dst)
+		return (NULL);
 	s = (char *) src;
-	d = (char *) dst;
+	d = dst;
 	while (i < n)
 	{
 		d[i] = s[i];

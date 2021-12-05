@@ -6,9 +6,12 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 20:12:45 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/20 20:14:01 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/12/05 03:37:57 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

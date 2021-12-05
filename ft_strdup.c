@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 06:20:17 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/20 17:45:24 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/22 21:15:53 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ char	*ft_strdup(const char *s1)
 	p[i] = '\0';
 	return (p);
 }
-int main ()
-{
-	char s[] = "oussama";
-	printf("%s",ft_strdup(s));
-	return(0);
-}
+// int main ()
+// {
+// 	char s[] = "oussama";
+// 	printf("%s",ft_strdup(s));
+// 	return(0);
+// }

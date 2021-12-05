@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 23:01:12 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/21 13:43:40 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/11/30 03:07:44 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(char *haystack, char *needle, size_t len)
 	size_t	o;
 
 	i = 0;
+	if (*needle == '\0')
+		return ((char *) haystack);
 	while (haystack[i] != '\0')
 	{
 		o = 0;

@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 23:01:58 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/20 11:34:25 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/12/05 05:25:35 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	o = ft_strlen(ptr);
 	while (o >= 0)
 	{
-		if (ptr[o] == c)
+		if (ptr[o] == (unsigned char)c)
 		{
 			return (&ptr[o]);
 		}

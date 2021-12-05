@@ -6,7 +6,7 @@
 /*   By: oqatim <oqatim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 00:33:32 by oqatim            #+#    #+#             */
-/*   Updated: 2021/11/21 13:42:49 by oqatim           ###   ########.fr       */
+/*   Updated: 2021/12/02 23:53:15 by oqatim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t		i;
+	size_t	i;
 	char	*s;
 
 	i = 0;
